@@ -1,0 +1,47 @@
+<!-- Top Navigation -->
+<div class="container">
+
+    <mat-toolbar color="primary">
+      <mat-toolbar-row>
+        <button mat-button [routerLink]='["/tide/home"]'>
+          <img class="logo" src="./../../assets/images/portal-logo.png" alt="Dell logo" />
+        </button>
+
+        <span class="spacer"></span>
+        <span class="app-title"></span>
+        <span class="spacer"></span>
+
+        <button mat-button [routerLink]='["/tide/events/view"]'>Events</button>
+
+        <button mat-button [routerLink]='["/patents/home"]'>Patents</button>
+
+        <button mat-button [routerLink]='["/hackathons/home"]'>Hackathon</button>
+
+        <button mat-button [routerLink]='["/exp-center/home"]'>Experience Center</button>
+
+        <button mat-button [routerLink]='["/architecture-center/home"]'>Architecture Council</button>
+
+        <button mat-button [routerLink]='["/tide/contents"]'>Contents</button>
+
+        <button mat-button [matMenuTriggerFor]="eventAdminMenu">Administer</button>
+        <mat-menu #eventAdminMenu="matMenu" yPosition="below">
+          <button mat-menu-item [routerLink]='["/tide/events/lists"]'>
+            <mat-icon>event</mat-icon> Manage Events
+          </button>
+          <button mat-menu-item [routerLink]='["/tide/events/registration-list"]'>
+            <mat-icon>loyalty</mat-icon> Manage Registrations
+          </button>
+        </mat-menu>
+
+        <span class="spacer"></span>
+        <button *ngIf="isUserLoggedIn" mat-button class="userProfile">
+          <mat-icon>person</mat-icon>
+          {{userProfile}}
+        </button>
+
+      </mat-toolbar-row>
+    </mat-toolbar>
+
+</div>
+
+<!-- End of Top Navigation -->

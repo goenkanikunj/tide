@@ -1,0 +1,31 @@
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.mat-toolbar.mat-primary
+{
+  background: #ffffff;
+  font: 16px/22px 'Nunito SemiBold';
+  letter-spacing: 0;
+  color: #343A40;
+  opacity: 1;
+}
+
+.userProfile{
+  font: 12px/22px 'Nunito SemiBold';  
+}
+
+@media (min-width:600px){
+  .logo
+  {
+    margin-left: 50px;
+  }
+}

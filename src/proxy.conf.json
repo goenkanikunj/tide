@@ -1,0 +1,10 @@
+{
+  "/api": {
+    "target": "https://localhost:5001/api/creditparty"
+  },
+  "/api/v2/oauth2/token": {
+    "target": "https://oauth2.ausvdc02.pcf.dell.com",
+    "secure": true,
+    "changeOrigin": true
+  }
+}

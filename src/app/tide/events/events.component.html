@@ -1,0 +1,118 @@
+<div class="container">
+
+    <div class="home-banner">
+        <span>TIDE Events</span>
+    </div>
+
+    <div class="section home-events">
+
+        <mat-tab-group mat-stretch-tabs class="event-tabs mat-elevation-z4">
+            <mat-tab label="Qtr-1 2019">
+
+
+                <ul class="event-list">
+
+                    <li>
+                        <span class="event-group">Ongoing/Upcoming Events</span>
+
+                    </li>
+                    <li *ngFor="let tideEvent of tideEvents | eventStatus:false">
+                        <div class="event-item">
+                            <div class="event-date">
+                                <div class="event-date-section {{tideEvent.program}}">
+                                    <span class="day-date">{{tideEvent.date}}</span>
+                                    <span class="month-year">
+                                        {{tideEvent.month}} {{tideEvent.year}}
+                                    </span>
+                                </div>
+                                <div class="event-prog">
+                                    <h5>{{tideEvent.program}}</h5>
+                                </div>
+
+                            </div>
+                            <div class="event-info">
+                                <div class="event-detail">
+                                    <span class="event-title {{tideEvent.program}}">{{tideEvent.title}}</span>
+                                    <span class="event-desc">{{tideEvent.description}}</span>
+                                </div>
+                                <div class="event-outcome">
+                                    <div class="event-outcome1">{{tideEvent.info}}</div>
+                                    <div class="event-outcome2">{{tideEvent.outcomes}}</div>
+                                    <div class="event-outcome3" *ngIf="!tideEvent.eventStatus">
+                                        <a class="event-view-more" mat-button routerLink=".">View Details</a>
+                                        <button class="event-register-btn" mat-raised-button>Register</button>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li>
+                        <span class="event-group">Completed Events</span>
+                    </li>
+                    <li *ngFor="let tideEvent of tideEvents | eventStatus:true">
+                        <div class="event-item">
+                            <div class="event-date">
+                                <div class="event-date-section">
+                                    <span class="day-date">{{tideEvent.date}}</span>
+                                    <span class="month-year">
+                                        {{tideEvent.month}} {{tideEvent.year}}
+                                    </span>
+                                </div>
+                                <div class="event-prog">
+                                    <h5>{{tideEvent.program}}</h5>
+                                </div>
+
+                            </div>
+                            <div class="event-info">
+                                <div class="event-detail">
+                                    <span class="event-title {{tideEvent.program}}">{{tideEvent.title}}</span>
+                                    <span class="event-desc">{{tideEvent.description}}</span>
+                                </div>
+                                <div class="event-outcome">
+                                    <div class="event-outcome1">{{tideEvent.info}}</div>
+                                    <div class="event-outcome2">{{tideEvent.outcomes}}</div>
+                                    <div class="event-outcome3" *ngIf="!tideEvent.eventStatus">
+                                        <a class="event-view-more" mat-button routerLink=".">View Details</a>
+                                        <button class="event-register-btn" mat-raised-button>Register</button>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </li>
+                </ul>
+
+            </mat-tab>
+            <mat-tab label="Qtr-2 2019">
+                <ul class="event-list">
+
+                    <li>
+                        <h3>No events have been planned yet!</h3>
+                    </li>
+                </ul>
+            </mat-tab>
+            <mat-tab label="Qtr-3 2019">
+                <ul class="event-list">
+
+                    <li>
+                        <h3>No events have been planned yet!</h3>
+                    </li>
+                </ul>
+            </mat-tab>
+            <mat-tab label="Qtr-4 2019">
+                <ul class="event-list">
+
+                    <li>
+                        <h3>No events have been planned yet!</h3>
+                    </li>
+                </ul>
+
+            </mat-tab>
+        </mat-tab-group>
+    </div>
+
+</div>

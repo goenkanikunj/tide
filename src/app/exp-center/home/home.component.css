@@ -1,0 +1,35 @@
+.section {
+    height: 600px;
+    opacity: 1;
+    padding-top: 3em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.section-header {
+    margin: 1em auto;
+    letter-spacing: 0;
+    font: 40px/54px Nunito;
+    color: #212529;
+}
+
+.section-content {
+    padding-top: 2em;
+    margin: 0 auto;
+    font: 18px/26p Nunito;
+    color: #343A40;
+}
+
+.home-exp-center {
+    background: transparent url('./../../../assets/images/exp-center.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.home-exp-center .section-header {
+    color: #FFFFFF;
+}
+
+.home-exp-center .section-content {
+    color: #CED4DA;
+}

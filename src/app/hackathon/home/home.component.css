@@ -1,0 +1,27 @@
+.section {
+    height: 600px;
+    opacity: 1;
+    padding: 3em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.section-header {
+    margin: 1em auto;
+    letter-spacing: 0;
+    font: 40px/54px Nunito;
+    color: #212529;
+}
+
+.section-content {
+    padding-top: 2em;
+    padding-left: 2em;
+    margin: 0 auto;
+    font: 18px/26p Nunito;
+    color: #343A40;
+}
+
+.home-hackathon {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+}

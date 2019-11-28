@@ -1,0 +1,18 @@
+.error-dialog-header
+{
+    display: inline-flex;
+}
+
+.mat-dialog-title
+{
+    color: #007DB8;
+    font-size: 25px;
+
+    padding-top: 10px;
+    padding-left: 55px;
+}
+
+.error-dialog-icon {
+    color: #007DB8;
+    font-size: 55px;
+}
